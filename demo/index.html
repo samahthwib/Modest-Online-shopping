@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modest Online Shop</title>
+
+    <style>
+        h1{
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        body{
+         background-color:rgb(222, 208, 245);   
+        }
+        ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: rgb(233, 226, 245); 
+        }
+
+        li {
+         float:left;
+        }
+
+        li a {
+          display: block;
+         color: rgb(12, 7, 7);
+         font-family:Verdana, Geneva, Tahoma, sans-serif;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+         background-color: rgb(240, 241, 167);
+         }  
+
+         main{
+            height: 700px;
+            background: rgb(179, 141, 240);
+           
+        }   
+
+        footer{
+            background: rgb(222, 208, 245);   
+            padding: 2px 23px;
+            border: 1px solid #bcb9b9;
+            text-align: center;
+            font-family: inherit;
+        }  
+
+        #lab1{
+            color: rgb(32, 51, 32);
+            background-color:rgb(193, 219, 193); ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Modest Online Shop</h1>
+
+        <nav>
+            <ul>
+              <li><a  href="index.html">Home</a></li>
+              <li><a href="index2.html">Contact us</a></li>
+              <li><a href="index3.html">Login</a></li>
+            
+            </ul>
+            
+                   </nav>
+    </header>
+
+    <main id="Styling">
+        <h1 id="lab1"> Class 1 Lab </h1>
+        <p id="name1" style="color:rgb(72, 77, 16); background-color: rgb(238, 238, 121); padding: 20px;"></p>
+        <p id="brand1" style="color:rgb(207, 74, 209); background-color: rgb(235, 187, 236); padding: 20px;"></p>
+        <p id="Size1" style="color:rgb(57, 94, 50); background-color: rgb(169, 229, 157); padding: 20px;"></p>
+        <p id="color1" style="color:rgb(114, 35, 52); background-color: rgb(228, 148, 165); padding: 20px;"></p>
+    </main>
+
+    <footer>
+        <p>Copy right for Modest Online Shop</p>
+    </footer>
+
+
+    <script>
+         var name = prompt("whats you name ?");
+         alert("Welcome to our shop " + name ) ;
+         console.log("Welcome to our shop " + name );
+         //document.write( '<p>' +name + '</p>')
+      
+         var brand = prompt("Please enter your favorite brand?", "Rifka , Lc Waikiki , Por La Cara ");
+         alert("Enjoy your shopping in " + brand + " "+"brand section !" ) ;
+         console.log( "Enjoy your shopping in " + brand + " "+"brand section")
+         //document.write( '<p>'+ "Enjoy your shopping in " + brand + " "+"brand section" + '</p>');
+
+
+         var Size = prompt("Please enter your size?", "36 ,38 , 40 ");
+         alert("We have alot of options for  " + Size +" size");
+         console.log("Your size is " + Size);
+         //document.write('<p>' + "Your size is " + Size  + '</p>');
+       
+        
+         var yourFavouriteColor= prompt("whats your favourit color?");
+         alert( "Your favourite color is  " + yourFavouriteColor + " and there is a big collection for this color!" );
+         console.log("Your favourite color is " + yourFavouriteColor );
+         // document.write('<p>' + "Your favourite color is " + yourFavouriteColor +'</p>' );
+       
+
+         var name1 = document.getElementById("name1");
+         name1.append( "Welcome to our shop " + name );
+        
+         var brand1 = document.getElementById("brand1");
+         brand1.append( "Enjoy your shopping in " + brand + " "+"brand section !");
+       
+         var Size1 = document.getElementById("Size1");
+         Size1.append( "We have alot of options for  " + Size +" size" );
+
+         var color1 = document.getElementById("color1");
+         color1.append( "Your favourite color is  " + yourFavouriteColor + " and there is a big collection for this color!" );
+
+
+      
+       // var myMain = document.getElementById("myMain");
+        //myMain.append("Welcome to 201 " + name);
+        //now we appending to a specific ID
+    </script>
+</body>
+</html>
